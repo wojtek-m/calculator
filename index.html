@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/calculator.css">
+  <title>Calculator App</title>
+</head>
+<body>
+  <!-- Calculator -->
+  <div class="wrapper calc calc-body col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
+    <div id="display" class="display col-xs-12">
+      <p>Calculator App</p>
+    </div>
+    <div class="col-xs-3 calc"><button id="7" class="calc-btn number">7</button></div>
+    <div class="col-xs-3 calc"><button id="8" class="calc-btn number">8</button></div>
+    <div class="col-xs-3 calc"><button id="9" class="calc-btn number">9</button></div>
+    <div class="col-xs-3 calc"><button id="ac" class="calc-btn number ac">AC</button></div>
+    <div class="col-xs-3 calc"><button id="4" class="calc-btn number">4</button></div>
+    <div class="col-xs-3 calc"><button id="5" class="calc-btn number">5</button></div>
+    <div class="col-xs-3 calc"><button id="6" class="calc-btn number">6</button></div>
+    <div class="col-xs-3 calc"><button id="save" class="calc-btn">SV</button></div>
+    <div class="col-xs-3 calc"><button id="1" class="calc-btn number">1</button></div>
+    <div class="col-xs-3 calc"><button id="2" class="calc-btn number">2</button></div>
+    <div class="col-xs-3 calc"><button id="3" class="calc-btn number">3</button></div>
+    <div class="col-xs-3 calc"><button id="multiply" class="calc-btn operand">x</button></div>
+    <div class="col-xs-3 calc"><button id="0" class="calc-btn number">0</button></div>
+    <div class="col-xs-3 calc"><button id="00" class="calc-btn number">00</button></div>
+    <div class="col-xs-3 calc"><button id="subtract" class="calc-btn operand">-</button></div>
+    <div class="col-xs-3 calc"><button id="divide" class="calc-btn operand">/</button></div>
+    <div class="col-xs-3 calc"><button id="000" class="calc-btn number">000</button></div>
+    <div class="col-xs-3 calc"><button id="dot" class="calc-btn dot">.</button></div>
+    <div class="col-xs-3 calc"><button id="add" class="calc-btn operand">+</button></div>
+    <div class="col-xs-3 calc"><button id="total" class="calc-btn operand">=</button></div>
+    <div id="history" class="display col-xs-12">
+      <p>Operation history</p>
+    </div>
+  </div>
+
+  <!-- Saved results -->
+  <div class="wrapper col-xs-12 col-md-8 col-md-offset-2">
+    <div class="save-display">
+      <p>You can save your operations history using the SV button<br> and
+      clear it using this <button id="clear-history">CLEAR</button> button.</p>
+      <ul id="saved-results">
+      </ul>
+    </div>
+  </div>
+
+</body>
+  <script src="js/calculator.js"></script>
+</html>
